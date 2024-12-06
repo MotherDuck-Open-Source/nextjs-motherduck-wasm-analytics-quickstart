@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { useMotherDuckClientState } from '@/motherduck/context/motherduckClientContext';
+import { useMotherDuckClientState } from '@/lib/motherduck/context/motherduckClientContext';
 import { zStringLabelNumericDataRow, StringLabelNumericDataRow } from '@/app/demo/types/StringLabelNumericDataRow';
 
 

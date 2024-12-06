@@ -1,10 +1,10 @@
 "use client"
 
-import { fetchMotherDuckToken } from "@/motherduck/functions/fetchMotherDuckToken";
-import initMotherDuckConnection from "@/motherduck/functions/initMotherDuckConnection";
+import { fetchMotherDuckToken } from "@/lib/motherduck/functions/fetchMotherDuckToken";
+import initMotherDuckConnection from "@/lib/motherduck/functions/initMotherDuckConnection";
 import type { MaterializedQueryResult, MDConnection, SafeQueryResult } from "@motherduck/wasm-client";
 import 'core-js/actual/promise/with-resolvers';
-import { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
+import { createContext, useContext, useEffect, useMemo, useRef } from "react";
 
 // Safe interface for using the connection
 interface MotherDuckContextValue {

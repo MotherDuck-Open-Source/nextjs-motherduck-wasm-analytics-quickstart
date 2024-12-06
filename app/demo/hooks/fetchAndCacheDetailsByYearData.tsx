@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { useMotherDuckClientState } from "@/motherduck/context/motherduckClientContext";
+import { useMotherDuckClientState } from "@/lib/motherduck/context/motherduckClientContext";
 
 const DETAILS_BY_YEAR_QUERY = `create temp table if not exists complaints_details as
 select year(created_date)::int as year, complaint_type as type, incident_zip as zipcode, count(*)::int as count

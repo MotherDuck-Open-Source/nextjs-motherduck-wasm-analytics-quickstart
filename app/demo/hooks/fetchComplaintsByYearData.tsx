@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { useMotherDuckClientState } from '@/motherduck/context/motherduckClientContext';
+import { useMotherDuckClientState } from '@/lib/motherduck/context/motherduckClientContext';
 import { zNumeric2DDataRow, Numeric2DDataRow } from '@/app/demo/types/Numeric2DDataRow';
 
 const COUNT_BY_YEAR_QUERY = `select year(created_date)::int as label, count(*)::int as value

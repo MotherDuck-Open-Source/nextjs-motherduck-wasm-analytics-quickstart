@@ -1,4 +1,4 @@
-import { MotherDuckClientProvider } from "@/motherduck/context/motherduckClientContext";
+import { MotherDuckClientProvider } from "@/lib/motherduck/context/motherduckClientContext";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
