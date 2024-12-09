@@ -29,7 +29,7 @@ const NYCZipcodeHeatMap: React.FC<NYCZipcodeHeatMapProps> = ({
   });
 
   // Fetch GeoJSON data
-  const fetchGeoJson = async () => {
+  const fetchGeoJson = useCallback(async () => {
     try {
       const response = await fetch('https://raw.githubusercontent.com/OpenDataDE/State-zip-code-GeoJSON/master/ny_new_york_zip_codes_geo.min.json');
       const data = await response.json();
@@ -38,7 +38,7 @@ const NYCZipcodeHeatMap: React.FC<NYCZipcodeHeatMapProps> = ({
       setError('Failed to load map data');
       console.error('Error fetching GeoJSON:', error);
     }
-  };
+  }, []);
 
   // Handle data refresh
   const handleDataRefresh = useCallback(async () => {
