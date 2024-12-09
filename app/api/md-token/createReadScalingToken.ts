@@ -11,7 +11,8 @@ function randomString(length = 16) {
 }
 
 
-// MOTHERDUCK: This creates a new read-only token for the Vercel service account that expires after ttl_s seconds. 
+// MOTHERDUCK: This creates a new read-scaling token for the Vercel service account that expires after ttl_s seconds. 
+// See docs: https://motherduck.com/docs/key-tasks/authenticating-and-connecting-to-motherduck/read-scaling/ 
 export default async function createReadScalingToken(ttl_s: number) {
     if (ttl_s <= 0) {
         throw new Error("TTL must be greater than 0");

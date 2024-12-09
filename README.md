@@ -1,6 +1,6 @@
 # Next.js MotherDuck Wasm analytics quickstart
 
-This is a [Next.js](https://nextjs.org) app using the MotherDuck storage backend with the Wasm-SDK client, with an interactive data analytics example. A live demo can be found [here](https://nextjs-motherduck-wasm-analytics-quickstart.vercel.app/).
+This is a [Next.js](https://nextjs.org) app using the MotherDuck storage backend with the Wasm-SDK client, with an interactive data analytics example. A live demo can be found [here](https://motherduck-wasm-analytics-quickstart.vercel.app/).
 
 A minimal starter template can be found [here](https://github.com/MotherDuck-Open-Source/nextjs-motherduck-wasm-analytics-quickstart-minimal).
 
